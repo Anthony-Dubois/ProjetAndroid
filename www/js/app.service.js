@@ -6,7 +6,8 @@ angular.module('app')
 		}
 		this.getListContract = function(iso2){
 			return $http.get(apiHost + 'countries/' + iso2 + '/contracts');
+		}
+		this.getListStation = function(idContract){
+			return $http.get(apiHost + 'contracts/' + idContract + '/stations');
 		};
 	});
-
-	

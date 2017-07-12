@@ -1,7 +1,6 @@
 angular.module('app', ['ionic'])
 
 	.controller( 'countriesListCtrl', function ($scope, countriesService){
-
 		countriesService.getList()
 			.then(function(response){
 				console.log(response.data);
@@ -11,8 +10,8 @@ angular.module('app', ['ionic'])
 				console.error(error.message);
 			});		
 	})
-	.controller( 'contractListCtrl', function ($scope, countriesService, $stateParams){
 
+	.controller( 'contractListCtrl', function ($scope, countriesService, $stateParams){
 		countriesService.getListContract($stateParams.iso2)
 			.then(function(response){
 				console.log(response.data);
@@ -21,5 +20,17 @@ angular.module('app', ['ionic'])
 			.catch(function (error){
 				console.error(error.message);
 			});	
+	})
+
+	.controller( 'stationListCtrl', function ($scope, countriesService,$stateParams){
+		countriesService.getListStation($stateParams.idContract)
+			.then(function(response){
+				console.log(response.data);
+				$scope.stations = response.data;
+			})
+			.catch(function (error){
+				console.error(error.message);
+			});	
 	});
+
 

@@ -1,0 +1,17 @@
+<ion-pane>
+	<ion-header-bar class="bar-stable">
+		<h1 class="title">Ionic Blank Starter</h1>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list>
+			<ion-item ng-repeat="s in stations | orderBy : 'name'">
+				<h3> {{s.name}} </h3>
+				<p> {{s.address}} </p>
+				<h5>Vélos disponibles : {{s.availableBikes}} </h5>
+				<h5>Places vides :  {{s.availableFreeSpots}} </h5>
+				<h5>{{s.open ? "Station ouverte actuellement" : "Station fermée"}} </h5>
+				<h5>{{s.banking ? "Possibilité d'achat à la borne" : "Achat à la borne indisponnible"}} </h5>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-pane>

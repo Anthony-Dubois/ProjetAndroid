@@ -12,5 +12,10 @@ angular.module('app')
 				url : '/contract/:iso2',
 				controller: 'contractListCtrl',
 				templateUrl : '/templates/contract/list.html'
-			});
+			})
+			.state ( 'stationsList', {
+				url : 'contracts/stations/:idContract',
+				controller: 'stationListCtrl',
+				templateUrl : '/templates/stations/list.html'
+			})
 	});
