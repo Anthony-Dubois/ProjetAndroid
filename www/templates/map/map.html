@@ -1,0 +1,7 @@
+<leaflet defaults="defaults"  markers="markers" center="center" id="leaflet"></leaflet>
+<div class="choose">
+  <div class='items' ng-repeat="(key, value) in countries" ng-click="markersInCountry()">{{value.name}}</div>
+</div>
+<div class="location" ng-click="location()">
+  <i class="fa fa-compass" aria-hidden="true"></i>
+</div>

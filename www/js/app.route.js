@@ -18,4 +18,9 @@ angular.module('app')
 				controller: 'stationListCtrl',
 				templateUrl : '/templates/stations/list.html'
 			})
+			.state ( 'map', {
+				url : '/map',
+				controller: 'mapCtrl',
+				templateUrl : '/templates/map/map.html'
+			})
 	});
