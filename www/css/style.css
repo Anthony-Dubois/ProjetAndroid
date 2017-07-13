@@ -1,1 +1,62 @@
 /* Empty. Add your own CSS if you like */
+#leaflet {
+  width:100vw;
+  height: 100vh;
+}
+.choose{
+  position: absolute;
+  bottom: 0;
+  width:100vw;
+  height: 30vh;
+  background-color: white;
+  text-align: center;
+  overflow-y: scroll;
+}
+.choose .items{
+  border:1px solid rgb(35, 111, 95);
+  width: 100%;
+  -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;
+  font-size:12px;
+  font-family:arial, helvetica, sans-serif;
+  padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+   background-image: -webkit-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+   background-image: -moz-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+   background-image: -ms-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+   background-image: -o-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+   background-image: linear-gradient(to bottom, rgb(35, 143, 121), rgb(35, 111, 95));
+}
+.location{
+  width: 4em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  height:4em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-image: -webkit-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+  background-image: -moz-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+  background-image: -ms-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+  background-image: -o-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+  background-image: linear-gradient(to bottom, rgb(35, 143, 121), rgb(35, 111, 95));
+  text-align: center;
+  border-radius: 100px;
+}
+.mapIcon{
+  width: 4em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  height:4em;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-image: -webkit-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+  background-image: -moz-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+  background-image: -ms-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+  background-image: -o-linear-gradient(top, rgb(35, 143, 121), rgb(35, 111, 95));
+  background-image: linear-gradient(to bottom, rgb(35, 143, 121), rgb(35, 111, 95));
+  text-align: center;
+  border-radius: 100px;
+}
+
+.location i, .mapIcon i{
+  font-size: 4em;
+  color: white;
+}

@@ -118,7 +118,7 @@ angular.module('app', ['ionic', 'leaflet-directive'])
         }).catch(function(error) {
           console.error(error.message);
         });
-    }, 50);
+    }, 3000);
     this.interval = interval
     this.listenerService.addListener({
       name: 'interval',
